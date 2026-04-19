@@ -1,7 +1,7 @@
 """
 Vehicle Sales — Interactive Plotly Dash Dashboard
 Run:  python dashboard.py
-Open: http://127.0.0.1:8050
+Open: http://127.0.0.1:8030
 """
 
 import pandas as pd
@@ -14,7 +14,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # ─── Load & prepare data ───────────────────────────────────────────────────
-RAW_PATH = "/home/mennatullah/Documents/repos/li/AI/instant/hackathon/VehicleSales.parquet"
+RAW_PATH = "/home/mennatullah/Documents/repos/li/AI/instant/hackathon/V2/data/VehicleSales.parquet"
 
 df = pd.read_parquet(RAW_PATH)
 
@@ -399,6 +399,6 @@ def heatmap_chart(makes, bodies, states, trans, yr):
 if __name__ == "__main__":
     print("\n" + "="*55)
     print("  🚗  Vehicle Sales Dashboard")
-    print("  Open → http://127.0.0.1:8050")
+    print("  Open → http://127.0.0.1:8030")
     print("="*55 + "\n")
-    app.run(debug=False, host="127.0.0.1", port=8050)
+    app.run(debug=False, host="127.0.0.1", port=8030)
