@@ -14,7 +14,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # ─── Load & prepare data ───────────────────────────────────────────────────
-RAW_PATH = "/home/mennatullah/Documents/repos/li/AI/instant/hackathon/V2/data/VehicleSales.parquet"
+RAW_PATH = "/home/mennatullah/Documents/repos/li/AI/instant/hackathon/data/raw/VehicleSales.parquet"
 
 df = pd.read_parquet(RAW_PATH)
 
