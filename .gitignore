@@ -2,3 +2,4 @@
 *.parquet
 *.mp4
 *.xlsx
+'*/data'
